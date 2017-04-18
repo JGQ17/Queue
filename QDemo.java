@@ -23,8 +23,15 @@ class Queue {
 	}
 
 	// this removes from the queue
-	public void pop() {
-		
+	public int pop() {
+		if (j < arr.length && arr[j] != 0) {
+	
+			j++;
+			return arr[j-1];
+		}
+		else {
+			return -1;
+		}
 	}
 }
 
@@ -33,7 +40,7 @@ class QDemo {
 		Queue one = new Queue(9);
 
 		for(int l = 0; l < 9; l++) {
-			System.out.print(one.arr[l]);
+			System.out.print(one.arr[l]+" ");
 		}
 
 		System.out.println();
@@ -46,10 +53,29 @@ class QDemo {
 		one.push(1);
 		one.push(2);
 		one.push(8);
+		// testing to see if this shit works
 		one.push(13);
 
 		for(int l = 0; l < 9; l++) {
-			System.out.print(one.arr[l]);
+			System.out.print(one.arr[l]+" ");
 		}
+
+		System.out.println();
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+		System.out.println(one.pop());
+	
 	}
 }

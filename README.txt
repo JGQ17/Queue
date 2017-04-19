@@ -1,0 +1,1 @@
+I (Justin) did the push method and the constructor and Jason did the pop method.
